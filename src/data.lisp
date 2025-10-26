@@ -6,4 +6,3 @@
 
 (defclass my-class ()
   ((slot1 :initarg :slot1 :accessor slot1)))
-

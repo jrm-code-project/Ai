@@ -6,4 +6,3 @@
 
 (defgeneric my-generic (arg)
   (:documentation "A sample generic function."))
-

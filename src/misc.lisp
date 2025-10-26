@@ -7,4 +7,3 @@
 (defun my-misc-function (x y)
   "A sample miscellaneous function."
   (+ x y))
-

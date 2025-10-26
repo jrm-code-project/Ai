@@ -6,4 +6,3 @@
 
 (defmacro my-macro (arg)
   `(format t "Hello, ~a!~%" ,arg))
-

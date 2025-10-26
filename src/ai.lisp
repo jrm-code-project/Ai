@@ -7,4 +7,3 @@
 (defun main ()
   "The main function."
   (format t "Hello from Ai!~%"))
-

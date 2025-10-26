@@ -6,4 +6,3 @@
 
 (defvar *my-variable* 42
   "A sample global variable.")
-

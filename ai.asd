@@ -2,18 +2,18 @@
 
 (defsystem "ai"
   :depends-on ("alexandria"
-               "function"
                "fold"
+               "function"
                "named-let"
                "series"
                "str")
   :components ((:module "src"
                 :components
-                ((:file "package")
-                 (:file "data" :depends-on ("package"))
+                ((:file "ai"       :depends-on ("data" "generics" "macros" "misc" "package" "vars"))
+                 (:file "data"     :depends-on ("package"))
                  (:file "generics" :depends-on ("package"))
-                 (:file "macros" :depends-on ("package"))
-                 (:file "misc" :depends-on ("package" "macros"))
-                 (:file "vars" :depends-on ("package" "macros"))
-                 (:file "ai" :depends-on ("package" "macros" "data" "generics" "misc" "vars"))))))
+                 (:file "macros"   :depends-on ("package"))
+                 (:file "misc"     :depends-on ("macros" "package"))
+                 (:file "package")
+                 (:file "vars"     :depends-on ("macros" "package"))))))
 
